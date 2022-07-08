@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var anoChegada = 1500;
+        var anoAtual = 2022;
+        var anos = anoAtual - anoChegada;
+
+        mostra("No Brasil já se passaram " + (anos/28) + " gerações desde ano 1500.");
+        pulaLinha();
+
+            
+
+    </script>
+</body>
+</html>

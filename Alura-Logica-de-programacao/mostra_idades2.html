@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            //pulando duas linhas
+            //hr é para fazer a sepação das linhas 
+            document.write("<br><hr><br>");
+
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var ano = 2022;
+        mostra("<big>" + "Eu nasci em : " + (ano - 32) + "</big>");
+        mostra("<big>" + " Adriano nasceu em : " + (ano - 26) + "</big>");
+        mostra("<big>" + " Paulo nasceu em : " + (ano - 31) + "</big>");
+
+    </script>
+</body>
+</html>

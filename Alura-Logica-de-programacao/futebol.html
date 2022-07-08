@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de pontos Futebol</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+
+            document.write (frase);
+            pulaLinha();
+        }
+
+        // parseInt - converte um texto em um número 
+
+        var vitorias = parseInt(prompt("Quantas vitórias o seu time teve?"));
+        var empates = parseInt(prompt("Entre com o número de empates"));
+
+        var pontos = (vitorias*3) + empates;
+
+        mostra("Os pontos do seu time são " + pontos);
+
+        if(pontos > 28) {
+
+            mostra("O seu time está melhor do que o ano passado");
+        } 
+        if(pontos < 28) {
+
+            mostra("O seu time está pior do que o ano passado");
+        } 
+        
+        if(pontos == 28) {
+            mostra("O seu time está igual ao ano passado");
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

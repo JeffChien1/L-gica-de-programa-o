@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação com 3 chances</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostra(frase) {
+            document.write (frase);
+            pulaLinha();
+        }
+
+        var numeroPensado = Math.round(Math.random() * 10);
+        console.log(numeroPensado)
+
+        var n = 1;
+
+        while(n <= 3) {
+
+            var chute = parseInt(prompt("Digite seu chute!"));
+            
+            if(chute == numeroPensado) {
+
+                mostra("Você Acertou!!");
+                break; //serve para parar o looping
+
+            } else{
+
+                mostra("Você errou!");
+            }
+
+            n++;
+        }
+        
+    </script>
+</body>
+</html>
