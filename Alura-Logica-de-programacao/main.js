@@ -9,19 +9,23 @@ for(var contador = 0; contador < quantidade; contador++) {
     var ingrediente = prompt("Informe o ingrediente " + contador);
 
     for(var posicao = 0; posicao <= ingredientes.length; posicao ++) {
+
         if(ingredientes[posicao] == ingrediente){
+
             repetiu = true;
             alert("Ingrediente repetido, Favor inserir outro ingrediente.");
-            prompt("Informe o ingrediente " + contador);
+            ingrediente = prompt("Informe o ingrediente " + contador);
+            ingredientes.push(ingrediente);
             break;
         }
     }
 
+
     if (repetiu == false) {
 
             ingredientes.push(ingrediente);
-            
-        }
     }
+}
 
 console.log(ingredientes);
+
